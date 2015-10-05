@@ -1,0 +1,45 @@
+// main: style.scss
+
+$serif: 'Raleway', sans-serif;
+$sans-serif: 'Open Sans', serif;
+
+body {
+  font-family: $sans-serif;
+  color: $primary;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $serif;
+}
+
+h1 {
+  color: #444;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+p {
+  line-height: 1.7em;
+  margin: 0 0 10px;
+  color: $primary;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+a {
+  color: $primary;
+  &:hover,
+  &:focus {
+    color: darken($primary, 20);
+  }
+}
+
+ul {
+  li {
+    line-height: 1.7em;
+  }
+}

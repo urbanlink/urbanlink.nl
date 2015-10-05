@@ -1,0 +1,11 @@
+//main: style.scss
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  border: 0;
+  &:hover {
+    background-color: darken($primary, 20);
+    color: $light;
+  }
+}

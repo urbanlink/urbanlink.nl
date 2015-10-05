@@ -1,0 +1,58 @@
+// main: style.scss
+
+.navbar {
+    background-image: none;
+    background-color: #FFF;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    min-height: 40px;
+    .brand {
+      img {
+        margin-top: 5px;
+        height: 30px;
+        margin-right: 20px;
+      }
+    }
+    .nav {
+      li {
+        a {
+          line-height: 40px;
+          padding: 0 14px;
+          text-decoration: none;
+          color: $primary;
+          font-size: 13px;
+          font-weight: 400;
+          text-shadow: none;
+          &:hover {
+            color: #fff;
+            background-color: transparent;
+          }
+          &.active {
+            color: #fff;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .preview {
+      line-height: 40px;
+      text-transform: uppercase;
+      font-size: 10px;
+      text-align: right;
+      background-color: #9CFFFF;
+      float: right;
+      padding: 0 10px;
+      color: $primary;
+      margin: 0;
+      li{
+        line-height: 40px;
+      }
+    }
+
+}
+
+.navbar .nav li:last-child a {
+  margin-right: 0px;
+}

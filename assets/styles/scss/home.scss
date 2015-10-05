@@ -1,0 +1,118 @@
+//main: style.scss
+.presentation {
+
+  h2 {
+    text-transform: uppercase;
+  }
+  .slide {
+    .bg-image {
+      background-image: url("/assets/img/home-slide.png");
+      background-attachment: cover;
+      height: 100%;
+    }
+  }
+
+  .contact {
+    text-align: center;
+    padding: 9em 0;
+  }
+
+  .video {
+    background-color: #000;
+    .background {
+      opacity: 0.4;
+    }
+    video {
+      width: 100%;
+    }
+    .holder {
+      display: table;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .content {
+        padding-top: 40px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        h1 {
+          text-indent: -99999px;
+        }
+        h2 {
+          color: #eee;
+          /* Custom, iPhone Retina */
+          @media only screen and (max-width : 800px) {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+        img {
+          margin: 0 auto;
+        }
+        a.arrow {
+          color: $primary;
+          i {
+            padding-top: 1em;
+          }
+          &:hover {
+            color: darken($primary, 20);
+          }
+        }
+      }
+    }
+  }
+  .description {
+    padding: 9em 0;
+    text-align: center;
+    @media only screen and (max-width : 800px) {
+      padding: 3em 0;
+
+
+    }
+  }
+
+  .features {
+    background-color: #ececec;
+    text-align: center;
+    border-top: 1px solid $lightgrey;
+    border-bottom: 1px solid $lightgrey;
+    .feature {
+      padding: 9em 0;
+      i {
+        color: $primary;
+      }
+      h3 {
+        color: $primary;
+      }
+    }
+  }
+
+  .opensource{
+    position: relative;
+    text-align: center;
+    padding: 9em 0;
+    i {
+      margin: 20px 0;
+    }
+    .btn {
+      padding: 10px 20px;
+    }
+  }
+
+  .reuse {
+    text-align: center;
+    padding: 9em 0;
+    a {
+      padding: 1.5em;
+    }
+  }
+}
